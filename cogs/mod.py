@@ -86,7 +86,7 @@ class Mod:
         else:
             success = True
 
-        emb = await self.format_mod_embed(ctx, success, 'kick')
+        emb = await self.format_mod_embed(ctx, method, success, 'kick')
 
         await ctx.send(embed=emb)
 
