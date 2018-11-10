@@ -77,10 +77,10 @@ class Mod:
         return emb
 
     @commands.command()
-    async def kick(self, ctx, member : discord.Member, *, reason='Please write a reason!'):
+    async def kick(self, ctx):
         '''Kick someone from the server.'''
         try:
-            await ctx.guild.kick(member, reason=reason)
+            await ctx.guild.kick.members
         except:
             success = False
         else:
